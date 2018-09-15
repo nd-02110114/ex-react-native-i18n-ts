@@ -48,6 +48,17 @@ const currentLocale = ts.createFunctionDeclaration(
   undefined,
 );
 
+const initAsync = ts.createFunctionDeclaration(
+  undefined,
+  undefined,
+  undefined,
+  'initAsync',
+  undefined,
+  [],
+  ts.createKeywordTypeNode(ts.SyntaxKind.AnyKeyword),
+  undefined,
+);
+
 const translationsVar = ts.createVariableStatement(
   undefined,
   ts.createVariableDeclarationList([
@@ -138,6 +149,7 @@ const i18nModule = (keys: Translation[]): ts.ModuleDeclaration =>
       defaultLocaleVar,
       localeVar,
       currentLocale,
+      initAsync,
       ...tFuncs(keys),
     ]),
   );

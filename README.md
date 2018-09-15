@@ -1,6 +1,8 @@
-# react-native-i18n-ts [![CircleCI](https://circleci.com/gh/quipper/react-native-i18n-ts.svg?style=svg)](https://circleci.com/gh/quipper/react-native-i18n-ts) [![npm version](https://badge.fury.io/js/react-native-i18n-ts.svg)](https://badge.fury.io/js/react-native-i18n-ts)
+# ex-react-native-i18n-ts
 
-`react-native-i18n-ts` is a `d.ts` file generator for [react-native-i18n](https://github.com/AlexanderZaytsev/react-native-i18n).
+This is forked by [react-native-i18n](https://github.com/quipper/react-native-i18n-ts)
+
+`ex-react-native-i18n-ts` is a `d.ts` file generator for [ex-react-native-i18n](https://github.com/xcarpentier/ex-react-native-i18n).
 
 With generated `d.ts` file you can treat `I18n` object type-safely!
 
@@ -11,13 +13,13 @@ With generated `d.ts` file you can treat `I18n` object type-safely!
 #### NPM
 
 ```sh
-npm install -D react-native-i18n-ts
+npm install -D ex-react-native-i18n-ts
 ```
 
 #### Yarn
 
 ```sh
-yarn add -D react-native-i18n-ts
+yarn add -D ex-react-native-i18n-ts
 ```
 
 ## Configuration
