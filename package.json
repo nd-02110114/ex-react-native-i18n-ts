@@ -1,9 +1,9 @@
 {
   "name": "ex-react-native-i18n-ts",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "A tiny d.ts file generator for ex-react-native-i18n",
   "bin": {
-    "i18n-ts": "build/bin/index.js"
+    "ex-react-native-i18n-ts": "build/bin/index.js"
   },
   "repository": "https://github.com/nd-02110114/ex-react-native-i18n-ts",
   "keywords": [
@@ -25,6 +25,7 @@
     "@types/jest": "^22.2.3",
     "@types/mkdirp": "^0.5.2",
     "@types/node": "^9.4.6",
+    "create-react-native-app": "^1.0.0",
     "jest": "^22.4.3",
     "prettier": "^1.12.1",
     "ts-jest": "^22.4.4",

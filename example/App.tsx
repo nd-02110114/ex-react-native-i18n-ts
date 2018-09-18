@@ -3,8 +3,8 @@ import { Platform, StyleSheet, Text, View } from 'react-native';
 import I18n from './locale';
 
 const instructions = Platform.select({
-  ios: I18n.t('platform.ios'),
   android: I18n.t('platform.android'),
+  ios: I18n.t('platform.ios'),
 });
 
 const styles = StyleSheet.create({
@@ -29,6 +29,10 @@ const styles = StyleSheet.create({
 export default class App extends Component {
   constructor(props) {
     super(props);
+  }
+
+  componentWillMount() {
+    I18n.initAsync();
   }
 
   render() {

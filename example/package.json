@@ -1,43 +1,62 @@
 {
   "name": "example",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/react": "^16.3.14",
+    "@types/react-native": "^0.55.14",
+    "@types/react-test-renderer": "^16.0.1",
+    "ex-react-native-i18n-ts": "^0.0.4",
+    "jest-expo": "~27.0.0",
+    "react-native-scripts-ts": "1.15.0",
+    "react-native-typescript-transformer": "^1.2.3",
+    "react-test-renderer": "16.3.1",
+    "ts-jest": "^22.4.6",
+    "tslib": "^1.9.1",
+    "typescript": "^2.8.3"
+  },
+  "main": "./node_modules/react-native-scripts-ts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "tsc": "tsc",
-    "clean": "rimraf artifacts",
-    "build": "yarn run clean && yarn run tsc",
-    "watch": "yarn run build -w",
-    "start:ios": "yarn run build && concurrently -r 'yarn run watch' 'react-native run-ios'",
-    "start:android": "yarn run build && concurrently -r 'yarn run watch' 'react-native run-android'",
+    "start": "react-native-scripts-ts start",
+    "eject": "react-native-scripts-ts eject",
+    "android": "react-native-scripts-ts android",
+    "ios": "react-native-scripts-ts ios",
     "test": "jest",
     "i18n-ts": "i18n-ts",
     "i18n-ts:watch": "i18n-ts -w"
   },
-  "dependencies": {
-    "react": "16.3.1",
-    "react-native": "0.55.3",
-    "react-native-i18n": "^2.0.12"
-  },
-  "devDependencies": {
-    "@types/react": "^16.3.13",
-    "@types/react-native": "^0.55.10",
-    "babel-jest": "22.4.3",
-    "babel-preset-react-native": "4.0.0",
-    "babel-preset-react-native-stage-0": "^1.0.1",
-    "concurrently": "^3.5.1",
-    "jest": "22.4.3",
-    "react-native-i18n-ts": "^0.1.0",
-    "react-test-renderer": "16.3.1",
-    "rimraf": "^2.6.2",
-    "ts-jest": "^21.0.1",
-    "typescript": "^2.6.1"
-  },
   "jest": {
-    "preset": "react-native"
+    "globals": {
+      "ts-jest": {
+        "useBabelrc": true
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "preset": "jest-expo",
+    "testMatch": [
+      "**/__tests__/**/*.[tj]s?(x)",
+      "**/?(*.)(spec|test).[tj]s?(x)"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
   },
-  "react-native-i18n-ts": {
-    "model": "./src/locale/languages/en.json",
+  "dependencies": {
+    "ex-react-native-i18n": "^0.0.4",
+    "expo": "^27.0.1",
+    "react": "16.3.1",
+    "react-native": "~0.55.2"
+  },
+  "ex-react-native-i18n-ts": {
+    "model": "./locale/languages/en.json",
     "outputDir": "./typings"
   }
 }
