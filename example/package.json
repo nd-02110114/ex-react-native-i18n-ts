@@ -23,8 +23,8 @@
     "android": "react-native-scripts-ts android",
     "ios": "react-native-scripts-ts ios",
     "test": "jest",
-    "i18n-ts": "i18n-ts",
-    "i18n-ts:watch": "i18n-ts -w"
+    "i18n-ts": "ex-react-native-i18n-ts",
+    "i18n-ts:watch": "ex-react-native-i18n-ts -w"
   },
   "jest": {
     "globals": {

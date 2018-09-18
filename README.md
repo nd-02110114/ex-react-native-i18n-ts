@@ -30,20 +30,10 @@ First of all specify the following settings in root `package.json`.
 - `outputDir`: `d.ts` file will be emitted in specified directory
 
 ```json
-"react-native-i18n-ts": {
+"ex-react-native-i18n-ts": {
   "model": "./src/locale/languages/en.json",
   "outputDir": "./typings"
 }
-```
-
-Note that when you specify `.ts` or `.js` file type as a model, use `module.exports` to export an object.
-
-```ts
-module.exports = {
-  platform: {
-    ios: 'Press Cmd+R to reload,\nCmd+D or shake for dev menu',
-  },
-};
 ```
 
 And add `outputDir` dir into `filesGlob` option in `tsconfig.json`.
@@ -54,14 +44,14 @@ And add `outputDir` dir into `filesGlob` option in `tsconfig.json`.
 ],
 ```
 
-That's it! Now you can use `i18n-ts` command which generates corresponding `d.ts` file.
+That's it! Now you can use `ex-react-native-i18n-ts` command which generates corresponding `d.ts` file.
 
 We recommend to add scripts below into `package.json`.
 
 ```json
 "scripts": {
-  "i18n-ts": "i18n-ts",
-  "i18n-ts:watch": "i18n-ts -w"
+  "i18n-ts": "ex-react-native-i18n-ts",
+  "i18n-ts:watch": "ex-react-native-i18n-ts -w"
 },
 ```
 
