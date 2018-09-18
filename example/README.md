@@ -1,4 +1,4 @@
-＃Example App
+# Example App
 
 ```
 $ yarn
