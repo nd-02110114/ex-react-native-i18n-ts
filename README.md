@@ -1,6 +1,6 @@
 # ex-react-native-i18n-ts
 
-This is forked by [react-native-i18n-ts](https://github.com/quipper/react-native-i18n-ts)
+This repository is forked from [react-native-i18n-ts](https://github.com/quipper/react-native-i18n-ts)
 
 `ex-react-native-i18n-ts` is a `d.ts` file generator for [ex-react-native-i18n](https://github.com/xcarpentier/ex-react-native-i18n).
 
@@ -8,7 +8,7 @@ With generated `d.ts` file you can treat `I18n` object type-safely!
 
 ![demo](https://raw.githubusercontent.com/quipper/react-native-i18n-ts/master/doc/demo.gif)
 
-## Installation (Comming Soon...)
+## Installation
 
 #### NPM
 
